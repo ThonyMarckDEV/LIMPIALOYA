@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Interfaces.NavBar">
+
+    <!-- Contenido principal de la aplicación -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigation_bar">
+    </FrameLayout>
+
+    <!-- Barra de navegación inferior con ImageButtons ajustados -->
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Botón Perfil con ícono ajustado al tamaño del botón -->
+        <ImageButton
+            android:id="@+id/btnPerfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="Perfil"
+            android:scaleType="fitCenter"/>
+
+        <!-- Botón Reportar con ícono ajustado al tamaño del botón -->
+        <ImageButton
+            android:id="@+id/btnReportar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="Reportar"
+            android:scaleType="fitCenter"/>
+
+        <!-- Botón Rankings con ícono ajustado al tamaño del botón -->
+        <ImageButton
+            android:id="@+id/btnRankings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="Rankings"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+</RelativeLayout>

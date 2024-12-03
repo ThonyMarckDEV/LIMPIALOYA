@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fondo de la pantalla (ImageView) -->
+    <!-- Cambia 'carga_ui' por tu recurso de fondo -->
+    <ImageView
+        android:id="@+id/imgvFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/genericui" />
+
+    <!-- Contenedor que centra el reporte en el medio y más pequeño -->
+    <LinearLayout
+        android:layout_width="342dp"
+        android:layout_height="686dp"
+        android:layout_gravity="center"
+        android:background="#CCFFFFFF"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="16dp"> <!-- Sombra para que se vea flotante -->
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTituloReporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Reporte Completo"
+            android:textColor="#4F504E"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Imagen del reporte en tamaño más pequeño -->
+
+        <!-- ID del reporte -->
+        <ImageView
+            android:id="@+id/imgvReporte"
+            android:layout_width="308dp"
+            android:layout_height="296dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvIdReporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="ID Reporte: "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- ID del usuario -->
+        <TextView
+            android:id="@+id/tvUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Usuario: "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Fecha del reporte -->
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Fecha: "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Descripción del reporte -->
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Descripción: "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Contenedor para los botones, alineados horizontalmente en el fondo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRevisarReporte"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#485442"
+                android:fontFamily="@font/adlam_display"
+                android:padding="10dp"
+                android:text="Revisar Reporte"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnEliminarReporte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="#B22222"
+                android:fontFamily="@font/adlam_display"
+                android:padding="10dp"
+                android:text="Eliminar Reporte"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
